@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on AIM扩散力场</title>
+    <link>https://electromaster.cn/tags/</link>
+    <description>Recent content in Tags on AIM扩散力场</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>2020 AIM扩散力场</copyright>
+    <lastBuildDate>Tue, 25 Feb 2020 18:11:57 +0800</lastBuildDate>
+    
+	<atom:link href="https://electromaster.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://electromaster.cn/tags/hugo/</link>
+      <pubDate>Tue, 25 Feb 2020 18:11:57 +0800</pubDate>
+      
+      <guid>https://electromaster.cn/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>折腾</title>
+      <link>https://electromaster.cn/tags/%E6%8A%98%E8%85%BE/</link>
+      <pubDate>Tue, 25 Feb 2020 18:11:57 +0800</pubDate>
+      
+      <guid>https://electromaster.cn/tags/%E6%8A%98%E8%85%BE/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

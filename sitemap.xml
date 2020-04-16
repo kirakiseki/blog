@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://electromaster.cn/categories/</loc>
+    <lastmod>2020-02-26T15:30:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://electromaster.cn/tags/hugo/</loc>
+    <lastmod>2020-02-26T15:30:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://electromaster.cn/categories/hugo/</loc>
+    <lastmod>2020-02-26T15:30:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://electromaster.cn/tags/</loc>
+    <lastmod>2020-02-26T15:30:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://electromaster.cn/hugo/use-html-labels-in-hugo/</loc>
+    <lastmod>2020-02-26T15:30:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://electromaster.cn/tags/%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2020-02-26T15:30:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://electromaster.cn/</loc>
+    <lastmod>2020-04-12T20:22:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://electromaster.cn/about/</loc>
+    <lastmod>2020-04-12T20:22:25+08:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AIM扩散力场</title>
+    <link>https://electromaster.cn/</link>
+    <description>Recent content on AIM扩散力场</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>2020 AIM扩散力场</copyright>
+    <lastBuildDate>Mon, 24 Feb 2020 08:31:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://electromaster.cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在Hugo中使用HTML标签</title>
+      <link>https://electromaster.cn/hugo/use-html-labels-in-hugo/</link>
+      <pubDate>Tue, 25 Feb 2020 18:11:57 +0800</pubDate>
+      
+      <guid>https://electromaster.cn/hugo/use-html-labels-in-hugo/</guid>
+      <description>0x01 偶然的发现 在写本博客的关于的时候，需要用到注音的&amp;lt;ruby&amp;gt;标签，就像这样。
+&amp;lt;ruby&amp;gt;Kira&amp;lt;rt&amp;gt;きら&amp;lt;/rt&amp;gt;&amp;lt;/ruby&amp;gt; &amp;lt;ruby&amp;gt;Kiseki&amp;lt;rt&amp;gt;きせき&amp;lt;/rt&amp;gt;&amp;lt;/ruby&amp;gt; 在Atom的Markdown预览中的结果就是这样
+然而结果是这个样子的
+想着HTML是Markdown原生支持的特性，然后又继续测试了&amp;lt;del&amp;gt;&amp;lt;font&amp;gt;之类的标签，和更换主题等的折腾。然而并没有什么卵用。
+0x02 解决方法 在网站的源代码中，我们可以发现原来的html标签被处理成了这个样子。
+也就是说，&amp;lt;ruby&amp;gt; &amp;lt;rt&amp;gt;等标签被处理成了&amp;lt;!-- raw HTML omitted --&amp;gt;。
+一番搜索之后,在官方论坛找到了这个问题的产生原因和解决方法。
+Raw HTML getting omitted in 0.60.0
+原因就是，在19年11月的Hugo的0.60.0版本中， 使用了Goldmark作为默认的Markdown库，如果想再次使用HTML标签的话，需要在配置文件中添加以下的配置。 [markup] [markup.goldmark] [markup.goldmark.renderer] unsafe = true 添加以上几行之后就可以在Hugo中愉快的使用HTML标签辣w。
+0x03 吐槽 原帖下某个人的回复 看来升级前还是要注意下备份和Release Notes之类的东西，防止滚挂或者一些奇奇怪怪的特性。</description>
+    </item>
+    
+    <item>
+      <title>关于我与这个博客</title>
+      <link>https://electromaster.cn/about/</link>
+      <pubDate>Mon, 24 Feb 2020 08:31:22 +0800</pubDate>
+      
+      <guid>https://electromaster.cn/about/</guid>
+      <description>0x01 前言 建立这个博客也没啥特别的理由，这两年一直在搞OI (蒟蒻) ，然后想找一个地方来记录一些题解和模板之类的，然后就搞了这么个博客。 为啥用Hugo呢？之前用的是Hexo，主题是Icarus。生成一次文章要20+秒，真的吃不消，正好也想学一下Golang，就转到Hugo来了。啥？你说为啥不用Typecho/WordPress？很简单，gh-pages又不要钱（笑）。
+0x02 关于我 Kiraきら Kisekiきせき
+  我也不知道当初怎么想的，起了个有点诡异又有点中二的名字。Kira（きら）取“闪耀”之意，Kiseki（きせき）在日语中为“奇迹”，大概就是“闪耀的奇迹”这么个意思吧。总之，也希望自己能成为闪耀的奇迹。
+ 17岁，在东北某四线小城市上高二。
+爱好 ACGN相关 炮姐厨(从域名和标题也能看出来吧哈哈)/呱太厨 你号没了/黑琴/上琴/导演泪爷
+LL厨/缪推/果厨/SIF弃坑状态/二三次都厨/Emi
+柯南/新兰党/啊！雪莉/柯学宇宙
+哆啦厨
+Minecraft玩家/服务器运维/生存/技术向
+明日方舟已退坑
+番剧目录    已看过的 打算看的     某科学的超电磁炮(I II III) 鬼灭之刃   LoveLive(I II) 魔法禁书目录   工作细胞 四月是你的谎言   小林家的龙女仆 约会大作战   埃罗芒阿老师 某科学的一方通行   没有黄段子的无聊世界 吹响！上低音号   - 轻音少女     只是暂时能想到这些，如果能想到的话还会补  音乐 歌单巨巨巨巨巨乱</description>
+    </item>
+    
+  </channel>
+</rss>

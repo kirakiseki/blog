@@ -913,7 +913,7 @@ $(
             
 
             <div class="post-head-wrapper"
-                 style="background-image: url('/assets/timg.jpeg')">
+                 style="background-image: url('https://i.loli.net/2020/04/17/3n62lrKIMoTpYwR.jpg')">
                 <div class="post-title">
                     一站式的信息聚合(一) —— 自建TT-RSS
                     <div class="post-meta">
@@ -941,7 +941,7 @@ $(
             <div class="post-body-wrapper">
                 <div class="post-body">
                     <blockquote>
-<p>本文遵循<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 协议</a>。
+<p>本文遵循<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 协议</a>。
 转载请注明作者，禁止用于商业用途。</p>
 </blockquote>
 <h1 id="0x01-前言">0x01 前言</h1>
@@ -960,53 +960,53 @@ $(
 <p>本次选用的是Web端的<a href="https://tt-rss.org/">TT-RSS</a>(Tiny-Tiny-RSS)。Web端有一个好处就是不限制平台，手机和电脑或者其他的设备,只要能浏览网页都可以使用。而且TT-RSS也支持网页自适应，给我们带来了很大的方便。</p>
 <h1 id="0x02-tt-rss的安装">0x02 TT-RSS的安装</h1>
 <p>本次安装在内网的服务器上进行，使用域名为<code>rss.com</code>，内网IP<code>192.168.50.92</code>,系统<code>CentOS 8.1.1911</code>，为了方便测试，服务器上安装了<a href="https://bt.cn">宝塔面板</a>。实际生产环境中请进行替换。
-<img src="/assets/btpanel.png" alt="">
+<img src="https://i.loli.net/2020/04/17/O7T8Xk1Py6ZCceg.png" alt="">
 以如图所示的设置添加网站
-<img src="/assets/addsite.png" alt="">
+<img src="https://i.loli.net/2020/04/17/DJ6ukzOp7lUcg14.png" alt="">
 然后获取TT-RSS的安装文件。
 在网站根目录<code>/www/wwwroot/rss.com</code>下执行</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://git.tt-rss.org/fox/tt-rss.git .
 </code></pre></div><p>获取安装文件。
 当安装文件准备完成之后访问<code>http://rss.com/install</code>就可以进入TT-RSS的安装过程了。</p>
-<p><img src="/assets/install.jpg" alt="安装界面"></p>
-<p>在<code>Database type</code>中选择<code>MySQL</code>，<code>Host name</code>和<code>Port</code>无特殊需要，保持默认就可以。然后将创建网站时的数据库信息填入就可以啦。</p>
+<p><img src="https://i.loli.net/2020/04/17/VJ4WdHrNX8yhfmq.jpg" alt="安装界面">
+在<code>Database type</code>中选择<code>MySQL</code>，<code>Host name</code>和<code>Port</code>无特殊需要，保持默认就可以。然后将创建网站时的数据库信息填入就可以啦。</p>
 <p>填写完之后点击<code>Test configuration</code>来测试数据库连接，当看到这个的时候，您就可以点击<code>Initialize database</code>写入数据库后继续安装了。
-<img src="/assets/check.jpg" alt="检查数据库"></p>
+<img src="https://i.loli.net/2020/04/17/XsEtyWS75fqxMJG.jpg" alt="检查数据库"></p>
 <p>在弹出的<code>Generated configuration file</code>中选择<code>Save configuration</code>保存配置文件后即安装完成。</p>
 <h1 id="0x03-对tt-rss的简单配置">0x03 对TT-RSS的简单配置</h1>
 <p>在上一步的安装之后，访问<code>rss.com</code>就可以看到我们新安装的TT-RSS了。
 在登陆界面中，默认的用户名是<code>admin</code>,密码是<code>password</code>。
 登录后，系统会自动提醒更改密码。点击<strong>偏好设置</strong>就可以来到设置界面。
-<img src="/assets/passwd.jpg" alt="更改密码"></p>
-<p>在设置中将时区设置为<code>Asia/Shanghai</code>。
-<img src="/assets/timezone.jpg" alt="时区设置"></p>
-<p>在<code>用户</code>选项卡中点击<code>admin</code>可以更改密码。
-<img src="/assets/cgpasswd.jpg" alt="更改密码"></p>
-<p>更改密码后会提示一段代码，内容为Unicode，解码后可得到<code>请求未经授权</code>。这时候刷新一下网页就可以重新使用新密码登录。
-<img src="/assets/code.jpg" alt=""></p>
-<p>余下的内容可以按照个人的喜好进行调整。</p>
+<img src="https://i.loli.net/2020/04/17/zRoQBEnND2U3Sdx.jpg" alt="更改密码">
+在设置中将时区设置为<code>Asia/Shanghai</code>。
+<img src="https://i.loli.net/2020/04/17/7Fzjwf3TGnC8pqb.jpg" alt="时区设置">
+在<code>用户</code>选项卡中点击<code>admin</code>可以更改密码。
+<img src="https://i.loli.net/2020/04/17/uQ3Fl7MbJ1GUjyr.jpg" alt="更改密码">
+更改密码后会提示一段代码，内容为Unicode，解码后可得到<code>请求未经授权</code>。这时候刷新一下网页就可以重新使用新密码登录。
+<img src="https://i.loli.net/2020/04/17/Oz1ETL8VUCgKSb9.jpg" alt="code">
+余下的内容可以按照个人的喜好进行调整。</p>
 <h1 id="0x04-添加信息源">0x04 添加信息源</h1>
 <h2 id="单个信息源的添加">单个信息源的添加</h2>
 <p>在偏好设置中可以找到订阅信息源的选项。
-<img src="/assets/sourceadd.jpg" alt="添加信息源">
+<img src="https://i.loli.net/2020/04/17/qgnslz8GduX1PF9.jpg" alt="添加信息源">
 在弹出的窗口中填入获取到的RSS源，选择分类之后订阅就可以订阅新的信息源了。这里以 <strong>知乎每日精选</strong> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>为例。</p>
-<p><img src="/assets/ok.jpg" alt=""></p>
+<p><img src="https://i.loli.net/2020/04/17/u7FlynIHoMxqDjN.jpg" alt=""></p>
 <h2 id="批量添加信息源">批量添加信息源</h2>
 <p>要想批量添加信息源，你需要一个<code>OPML</code>文件，下面以人民日报<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>为例进行演示。
-<img src="/assets/opml.jpg" alt="opml"></p>
+<img src="https://i.loli.net/2020/04/17/72hJ5Zner8T4YSo.jpg" alt="opml"></p>
 <p>选中OPML之后，选择文件之后，<code>导入OPML</code>，就可以批量导入人民日报的RSS源了。
-<img src="/assets/opmlok.jpg" alt=""></p>
+<img src="https://i.loli.net/2020/04/17/ISGst19AfBXlKFE.jpg" alt=""></p>
 <p>其中有些是已经失效的RSS源，还请注意筛选。</p>
 <h1 id="0x05-信息源的更新">0x05 信息源的更新</h1>
 <p>在导入了信息源之后，我们发现我们的信息并没有更新。
-<img src="/assets/empty.jpg" alt="empty"></p>
+<img src="https://i.loli.net/2020/04/17/kRZmrBI96JPO7hv.jpg" alt="empty"></p>
 <p>因此，我们需要来进行信息的更新。</p>
 <h2 id="手动强制更新">手动强制更新</h2>
 <p>在左侧栏中选择一个信息源右键，选择<code>调试信息源</code>。
 在弹出的页面中选择<code>Force refetsh</code>后点击<code>Contiune</code>强制更新。
 页面变成这样的时候就完成了手动信息源更新。
-<img src="/assets/refetch.jpg" alt="refetch"></p>
-<p><img src="/assets/refetched.jpg" alt="refetched">
+<img src="https://i.loli.net/2020/04/17/VQOiATrERsP3tBk.jpg" alt="refetch"></p>
+<p><img src="https://i.loli.net/2020/04/17/guA4RY63y2UL8nd.jpg" alt="refetched">
 <del>萌音真的可爱 wsl</del></p>
 <h2 id="自动更新">自动更新</h2>
 <h3 id="在每次进入的时候更新">在每次进入的时候更新</h3>
@@ -1038,7 +1038,7 @@ service crond reload
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#CentOS使用</span>
 tail -f /var/log/cron
 </code></pre></div><p>如果定时任务设置正确的话，将会看到这样的文字。
-<img src="/assets/success_ytxq23qad.jpg" alt="success"></p>
+<img src="https://i.loli.net/2020/04/17/WvXxIpz637fgb1N.jpg" alt="success"></p>
 <h1 id="0x06-后记">0x06 后记</h1>
 <p>我们已经完成了TT-RSS阅读器的搭建和配置，可以开始愉快的阅读RSS内容了。但是现在提供RSS信息源的网站越来越少，该如何寻找到更多的信息源或者是自己创建信息源呢？可以看也许会写但是现在还没开始写的下一篇有关于RSSHub的文章。</p>
 <h1 id="0x07-一些参考">0x07 一些参考</h1>
@@ -1055,13 +1055,14 @@ tail -f /var/log/cron
 <p>知乎每日精选 <a href="https://www.zhihu.com/rss">https://www.zhihu.com/rss</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>People&rsquo;s Daily Online <a href="http://www.people.com.cn/rss/opml.xml">http://www.people.com.cn/rss/opml.xml</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>People&rsquo;s Daily Online <a href="http://www.people.com.cn/rss/opml.xml">http://www.people.com.cn/rss/opml.xml</a>
+cd <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
 
                     <HR width="100%" id="EOF">
-                    <p style="color:#777;">Last modified on 2020-04-16 15:53</p>
+                    <p style="color:#777;">Last modified on 2020-04-17 19:34</p>
                 </div>
 
             </div>
@@ -1070,8 +1071,8 @@ tail -f /var/log/cron
             <nav class="post-pagination">
 
                 
-                <a class="newer-posts">
-                    Next<br>No newer posts.
+                <a class="newer-posts" href="https://electromaster.cn/rss/rsshub/">
+                    Next<br>一站式的信息聚合(二) —— RSSHub的搭建
                 </a>
                 
 

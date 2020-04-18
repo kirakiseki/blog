@@ -7,10 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>2020 AIM扩散力场</copyright>
-    <lastBuildDate>Thu, 16 Apr 2020 09:54:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 19:29:12 +0800</lastBuildDate>
     
 	<atom:link href="https://electromaster.cn/categories/rss/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一站式的信息聚合(二) —— RSSHub的搭建</title>
+      <link>https://electromaster.cn/rss/rsshub/</link>
+      <pubDate>Fri, 17 Apr 2020 19:29:12 +0800</pubDate>
+      
+      <guid>https://electromaster.cn/rss/rsshub/</guid>
+      <description>本文遵循CC BY-NC-SA 4.0 协议。 转载请注明作者，禁止用于商业用途。
+ 0x01 前言 窝又来整活了(鞠躬) 这是一篇 真 · 水文 在上一篇文章中我们提到了现在RSS信息源难以寻找和稀少的问题，在这样的背景下，我们本篇文章的主角 RSSHub 便应运而生。
+ RSSHub 是一个开源、简单易用、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源。RSSHub 借助于开源社区的力量快速发展中，目前已适配数百家网站的上千项内容 1
+ 通过RSSHub我们就可以订阅各种奇奇怪怪的信息源了。放一些官方文档(需科学上网)的示例吧。
+可以看到，这东西是真的恐怖，你想到想不到的都可以在这里找到。就算没有找到你也可以通过他的接口自己编写信息源然后分享出来。
+0x02 安装  安装命令部分来自原作者2  首先从Git下载RSSHub的源码
+git clone https://github.com/DIYgod/RSSHub.git cd RSSHub 在下载完成之后安装依赖
+npm install 由于在国内访问npm速度很慢，这里我们使用淘宝 NPM 镜像cnpm
+cnpm install 在安装了依赖之后，启动服务
+npm start 但是这样会在SSH断开后终止进程，因此我们使用pm2工具来启动进程。
+pm2 start lib/index.js --name rsshub 看到如图的字样即为启动成功。 将RSSHub加入开机启动
+pm2 startup 不要忘记在面板中开放端口。 现在访问https://IP:1200/应该就可以看见默认的页面了。 0x03 反向代理 我们要用端口访问的话，就很不爽，于是我们要想办法去掉这个端口号，改为使用/rsshub的文件夹进行访问。
+由于服务器安装的是Nginx，因此我们使用Nginx的反向代理来实现。
+由于这里涉及到反向代理的前置技能树，这里就不展开讲述了，这里直接给出验证有效后的配置文件3。 请在站点Nginx配置文件中的server代码块中添加如下配置。
+location / { proxy_pass http://localhost:1200/; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; proxy_set_header X-Forwarded-Proto $scheme; proxy_redirect off; proxy_set_header Host $host; } 在更改了配置文件并重启了Nginx服务之后，我们就可以使用https://RSSHubIP/访问了。</description>
+    </item>
     
     <item>
       <title>一站式的信息聚合(一) —— 自建TT-RSS</title>
@@ -18,7 +41,7 @@
       <pubDate>Thu, 16 Apr 2020 09:54:38 +0800</pubDate>
       
       <guid>https://electromaster.cn/rss/ttrss/</guid>
-      <description>本文遵循CC BY-NC-SA 协议。 转载请注明作者，禁止用于商业用途。
+      <description>本文遵循CC BY-NC-SA 4.0 协议。 转载请注明作者，禁止用于商业用途。
  0x01 前言 RSS是什么?  RSS（简易信息聚合）是一种消息来源格式规范，用以聚合经常发布更新数据的网站，例如博客文章、新闻、音频或视频的网摘。RSS文件（或称做摘要、网络摘要、或频更新，提供到频道）包含全文或是节录的文字，再加上发布者所订阅之网摘数据和授权的元数据。1
  简单来说，可以通过订阅来自各处的RSS源来高效的实现信息聚合服务。
 为什么要用RSS? 依个人所见，现在的互联网信息充斥着我们的生活。其中许多都是对我们无用的垃圾信息，而阅读这些东西不但无用也会浪费我们宝贵的时间。因此，使用RSS服务来进行 有效信息的高效聚合 就显得极为重要了。

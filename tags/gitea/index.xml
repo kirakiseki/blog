@@ -14,10 +14,10 @@
     
     <item>
       <title>搭建私有化Git服务-Gitea</title>
-      <link>https://electromaster.cn/tech/gitea/</link>
+      <link>https://electromaster.cn/git/gitea/</link>
       <pubDate>Tue, 28 Apr 2020 21:32:49 +0800</pubDate>
       
-      <guid>https://electromaster.cn/tech/gitea/</guid>
+      <guid>https://electromaster.cn/git/gitea/</guid>
       <description>0 写在前面 这次划个水，少写点，水文。 因为有一些个人写的小东西没法挂到Github上去，还想找个地方存一下。然后还有一些学习的时候写的屎堆也想存一下，就建了这么个东西来做代码托管平台。
 1 Why Gitea? 其实也有别的选择，比如Gogs,GitLab之类的。但是GitLab性能开销太大，奈何渣机受不住啊。因为也用不到比较高深的内容，只是用作简单的代码托管和学习，而Gitea是从Gogs的基础上开发的，也会有一些优化之类，相对GitLab对于渣机还是很友好的，所以就选了Gitea。
 2 环境要求  最低的系统硬件要求为一个廉价的树莓派 本文使用Centos Mysql/Mariadb Nginx Git  3 安装  本次从二进制安装1  从官方下载安装文件。
